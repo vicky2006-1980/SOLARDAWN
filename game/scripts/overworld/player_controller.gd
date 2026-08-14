@@ -229,7 +229,8 @@ func _update_sprite_direction() -> void:
 			"down":
 				sprite.flip_h = false
 			"left":
-				sprite.flip_h = true
+				# Row 3 of the sheet is a dedicated left-facing view, no flipping needed
+				sprite.flip_h = false
 			"right":
 				sprite.flip_h = false
 

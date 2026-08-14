@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://brightvale"]
+[gd_scene load_steps=4 format=3 uid="uid://brightvale"]
 
 [ext_resource type="Script" path="res://scripts/overworld/map_scene.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/overworld/player_controller.gd" id="2"]
+[ext_resource type="SpriteFrames" path="res://assets/sprites/player/player_frames.tres" id="3_player_frames"]
 
 [node name="Brightvale" type="Node2D"]
 script = ExtResource("1")
@@ -18,6 +19,10 @@ position = Vector2(240, 400)
 script = ExtResource("2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+sprite_frames = ExtResource("3_player_frames")
+animation = &"idle_down"
+centered = true
+offset = Vector2(0, -4)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(3, 3)
