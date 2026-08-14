@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://brightvale"]
+
+[ext_resource type="Script" uid="uid://bb6lce8v187yj" path="res://scripts/overworld/map_scene.gd" id="1"]
+[ext_resource type="Script" uid="uid://rg2aufhcxad8" path="res://scripts/overworld/player_controller.gd" id="2"]
+
+[sub_resource type="TileSet" id="TileSet_sl1te"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_interact"]
+size = Vector2(40, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_player"]
+size = Vector2(20, 28)
+
+[node name="Brightvale" type="Node2D" unique_id=1830312541]
+script = ExtResource("1")
+map_id = "brightvale"
+map_name = "Brightvale"
+default_music = "brightvale"
+camera_limits = Rect2(0, 0, 960, 800)
+
+[node name="TileMap" type="TileMap" parent="." unique_id=586706859]
+tile_set = SubResource("TileSet_sl1te")
+format = 2
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=2110004692]
+position = Vector2(240, 400)
+script = ExtResource("2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=909318514]
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=801645484]
+zoom = Vector2(3, 3)
+
+[node name="InteractionArea" type="Area2D" parent="Player" unique_id=269815730]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/InteractionArea" unique_id=450640066]
+shape = SubResource("RectangleShape2D_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=605129157]
+shape = SubResource("RectangleShape2D_player")
+
+[node name="NPCs" type="Node2D" parent="." unique_id=2071402458]
+
+[node name="EncounterZones" type="Node2D" parent="." unique_id=471788118]
+
+[node name="Objects" type="Node2D" parent="." unique_id=192689805]
+
+[node name="TransitionLayer" type="CanvasLayer" parent="." unique_id=307273149]
+layer = 10
+
+[node name="MapLabel" type="Label" parent="." unique_id=213813355]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 200.0
+offset_bottom = 30.0
+text = "🏘️ Brightvale"
