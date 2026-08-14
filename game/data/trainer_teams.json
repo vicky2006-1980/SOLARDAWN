@@ -1,0 +1,136 @@
+{
+  "trainer_teams": {
+    "kyle_route1": {
+      "trainer_name": "Kyle",
+      "team": [
+        {"species": "pebblin", "level": 5, "moves": ["rock_throw", "harden"]},
+        {"species": "sparrowl", "level": 5, "moves": ["gust", "peck"]}
+      ],
+      "dialogue_before": "trainer_kyle",
+      "dialogue_after": "Hey, not bad! Keep going!",
+      "reward": {"item": "healing_moss", "qty": 3}
+    },
+    "maya_route1": {
+      "trainer_name": "Maya",
+      "team": [
+        {"species": "flickmice", "level": 7, "moves": ["volt_strike", "quick_attack"]},
+        {"species": "pebblin", "level": 7, "moves": ["stone_roll", "harden"]}
+      ],
+      "dialogue_before": "trainer_maya",
+      "dialogue_after": "You're ready for the cave. Be careful of Shadow-types!",
+      "reward": {"item": "spring_water", "qty": 2}
+    },
+    "cave_explorer": {
+      "trainer_name": "Explorer Dan",
+      "team": [
+        {"species": "duskbreak", "level": 10, "moves": ["shadow_thread", "dark_pulse"]},
+        {"species": "gloambat", "level": 11, "moves": ["shadow_thread", "gust"]},
+        {"species": "pebblin", "level": 9, "moves": ["rock_throw", "harden"]}
+      ],
+      "dialogue_after": "The carvings deeper in... they tell a story. Something ancient."
+    },
+    "forest_trainer_1": {
+      "trainer_name": "Ranger Elara",
+      "team": [
+        {"species": "thornix", "level": 14, "moves": ["thorn_barrage", "curl_defense"]},
+        {"species": "barkhound", "level": 15, "moves": ["vine_lash", "rock_throw", "protect"]},
+        {"species": "sparrowl", "level": 13, "moves": ["wind_blade", "quick_strike"]}
+      ],
+      "dialogue_after": "The ruins in the center of the forest... something strange has been happening there."
+    },
+    "kael_battle_1": {
+      "trainer_name": "Kael",
+      "team": [
+        {"species": "thornix", "level": 14, "moves": ["thorn_barrage", "spike_shot"]},
+        {"species": "gloambat", "level": 15, "moves": ["dark_dive", "sonic_screech"]},
+        {"species": "duskbreak", "level": 16, "moves": ["dark_pulse", "shadow_coil"]}
+      ],
+      "dialogue_before": "So you've made it this far. Let me see if you're truly ready.",
+      "dialogue_after": "You're stronger than I expected. But strength alone won't be enough at the mountain.",
+      "is_rival": true
+    },
+    "lake_trainer": {
+      "trainer_name": "Fisher Korin",
+      "team": [
+        {"species": "ripplet", "level": 19, "moves": ["water_jet", "bubble_beam"]},
+        {"species": "coralfenn", "level": 20, "moves": ["water_jet", "vine_lash", "coral_barrier"]},
+        {"species": "petalfin", "level": 18, "moves": ["vine_lash", "water_jet", "flower_bloom"]}
+      ],
+      "dialogue_after": "The lake's deeper than it looks. Some things down there haven't been seen in years."
+    },
+    "kael_battle_2": {
+      "trainer_name": "Kael",
+      "team": [
+        {"species": "craghorn", "level": 21, "moves": ["horn_charge", "stone_wall"]},
+        {"species": "leafmaw", "level": 22, "moves": ["ambush_bite", "dark_pulse"]},
+        {"species": "aethervolt", "level": 20, "moves": ["thunder_pulse", "wind_blade"]},
+        {"species": "duskbreak", "level": 24, "moves": ["shadow_coil", "venom_fang"]}
+      ],
+      "dialogue_before": "We meet again. I've been preparing. Have you?",
+      "dialogue_after": "Impressive. But the Deep Forest holds secrets you're not ready for. I'll see you there.",
+      "is_rival": true
+    },
+    "deep_forest_trainer": {
+      "trainer_name": "Mystic Vera",
+      "team": [
+        {"species": "veilmoth", "level": 25, "moves": ["shadow_dance", "spirit_wind"]},
+        {"species": "duskfang", "level": 27, "moves": ["shadow_claw", "ember_fang"]},
+        {"species": "leafmaw", "level": 24, "moves": ["shadow_roots", "ambush_bite"]},
+        {"species": "ancientroot", "level": 28, "moves": ["ancient_roots", "spirit_wind"]}
+      ],
+      "dialogue_after": "The ancient ones remember. The mountain calls to those who listen."
+    },
+    "kael_battle_3": {
+      "trainer_name": "Kael",
+      "team": [
+        {"species": "barkhound", "level": 27, "moves": ["ancient_roar", "rock_throw", "vine_lash"]},
+        {"species": "aethervolt", "level": 28, "moves": ["storm_call", "thunder_pulse"]},
+        {"species": "craghorn", "level": 28, "moves": ["horn_charge", "earthquake"]},
+        {"species": "duskfang", "level": 29, "moves": ["dark_rush", "shadow_inferno"]},
+        {"species": "veilmoth", "level": 30, "moves": ["veil_shroud", "shadow_dance", "dark_pulse"]}
+      ],
+      "dialogue_before": "This is it. Everything I've worked for. Don't get in my way.",
+      "dialogue_after": "You don't understand what's at stake. The Apex Crystal isn't a reward — it's a responsibility.",
+      "is_rival": true,
+      "story_flag_after": "kael_battle_3_won"
+    },
+    "mountain_ranger": {
+      "trainer_name": "Ranger Tomas",
+      "team": [
+        {"species": "craghorn", "level": 30, "moves": ["horn_charge", "stone_wall", "earthquake"]},
+        {"species": "ironshell", "level": 31, "moves": ["fortress_guard", "metal_claw", "rock_throw"]},
+        {"species": "aethervolt", "level": 32, "moves": ["storm_call", "thunder_pulse", "wind_blade"]},
+        {"species": "crystalite", "level": 30, "moves": ["crystal_beam", "prismatic_flare", "stone_wall"]}
+      ],
+      "dialogue_after": "The summit is just ahead. Be careful — the air gets thin, and the storms are brutal."
+    },
+    "kael_battle_4": {
+      "trainer_name": "Kael",
+      "team": [
+        {"species": "barkhound", "level": 33, "moves": ["ancient_roar", "forest_fury", "stone_wall"]},
+        {"species": "aethervolt", "level": 34, "moves": ["storm_call", "thunder_pulse"]},
+        {"species": "ironshell", "level": 34, "moves": ["fortress_guard", "iron_slam", "earthquake"]},
+        {"species": "duskfang", "level": 35, "moves": ["shadow_inferno", "dark_rush", "shadow_claw"]},
+        {"species": "craghorn", "level": 35, "moves": ["horn_charge", "earthquake", "stone_wall"]},
+        {"species": "veilmoth", "level": 38, "moves": ["veil_shroud", "shadow_dance", "dark_pulse", "spirit_wind"]}
+      ],
+      "dialogue_before": "The summit is within reach. But I won't let you take what I've earned!",
+      "dialogue_after": "How...? You don't understand the power at this peak. It will consume you!",
+      "is_rival": true,
+      "story_flag_after": "kael_final_defeated"
+    },
+    "region_1_boss": {
+      "trainer_name": "The Darkness",
+      "team": [
+        {"species": "duskfang", "level": 38, "moves": ["shadow_inferno", "dark_rush", "ember_fang"]},
+        {"species": "leafmaw", "level": 36, "moves": ["shadow_roots", "ambush_bite", "dark_pulse"]},
+        {"species": "ancientroot", "level": 38, "moves": ["forest_wrath", "ancient_roots", "spirit_wind"]},
+        {"species": "gloambat", "level": 35, "moves": ["dark_dive", "sonic_screech", "shadow_thread"]},
+        {"species": "veilmoth", "level": 40, "moves": ["veil_shroud", "shadow_dance", "dark_pulse", "spirit_wind"]},
+        {"species": "depthscale", "level": 42, "moves": ["abyssal_crush", "hydro_pump", "dark_pulse"]}
+      ],
+      "is_boss": true,
+      "story_flag_after": "region_1_boss_defeated"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://brightvale"]
+
+[ext_resource type="Script" path="res://scripts/overworld/map_scene.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/overworld/player_controller.gd" id="2"]
+
+[node name="Brightvale" type="Node2D"]
+script = ExtResource("1")
+map_id = "brightvale"
+map_name = "Brightvale"
+default_music = "brightvale"
+camera_limits = Rect2(0, 0, 960, 800)
+
+[node name="TileMap" type="TileMap" parent="."]
+tilemap_data = {}
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(240, 400)
+script = ExtResource("2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(3, 3)
+
+[node name="InteractionArea" type="Area2D" parent="Player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_player")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/InteractionArea"]
+shape = SubResource("RectangleShape2D_interact")
+
+[node name="NPCs" type="Node2D" parent="."]
+
+[node name="EncounterZones" type="Node2D" parent="."]
+
+[node name="Objects" type="Node2D" parent="."]
+
+[node name="TransitionLayer" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="MapLabel" type="Label" parent="."]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 200.0
+offset_bottom = 30.0
+text = "🏘️ Brightvale"
